@@ -8,12 +8,11 @@
 </head>
 <body>
 
-  <!-- Header Section with floating cart -->
+  <!-- Header Section -->
   <header>
     <div class="top-bar">
       <span>Email: anilcoirworks1973@gmail.com</span>
       <span>Phone: +91 6235279256</span>
-      <a href="#cart" class="cart-icon">🛒</a>
     </div>
     <nav>
       <h1 class="brand-title">ANIL COIR WORKS</h1>
@@ -25,7 +24,7 @@
     </nav>
   </header>
 
-  <!-- Banner Section with Background Image -->
+  <!-- Banner Section -->
   <section class="banner">
     <h2>Welcome to Anil Coir Works</h2>
     <p>Providing high-quality coir products since 1973.</p>
@@ -42,16 +41,23 @@
         <p>Price: ₹85</p>
         <button>Add to Cart</button>
       </div>
-      <!-- Add other product cards similarly -->
+      <div class="product-card" onclick="addToCart('Coir Mat', 450)">
+        <img src="i3.jpg" alt="Coir Mat">
+        <h4>Coir Mat</h4>
+        <p>Price: ₹450</p>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Add other products here -->
     </div>
   </section>
 
-  <!-- Cart Section -->
-  <section id="cart">
-    <h3>Shopping Cart</h3>
-    <ul id="cart-items"></ul>
-    <button id="checkout-button">Proceed to Checkout</button>
-  </section>
+  <!-- Chatbot Section -->
+  <div class="chatbot">
+    <div class="chat-window" id="chat-window">
+      <div class="chat-messages" id="chat-messages"></div>
+      <input type="text" id="chat-input" placeholder="Type 'hi' to start" onkeypress="handleChat(event)">
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
