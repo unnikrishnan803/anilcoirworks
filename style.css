@@ -1,3 +1,16 @@
+/* Reset styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
 /* Chatbot Styling */
 .chatbot {
   position: fixed;
@@ -11,6 +24,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .chat-messages {
@@ -22,5 +36,7 @@
 #chat-input {
   width: 100%;
   padding: 8px;
+  border: none;
   border-top: 1px solid #ccc;
+  outline: none;
 }
