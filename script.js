@@ -1,4 +1,4 @@
-// Sample cart array for storing selected products
+// Initialize an array to simulate adding products to the cart
 const cart = [];
 
 function addToCart(productName, price) {
@@ -7,17 +7,18 @@ function addToCart(productName, price) {
 }
 
 function updateCart() {
-  console.log(cart);
+  console.log("Cart updated:", cart);
 }
 
+// Chatbot handling function
 function handleChat(event) {
   if (event.key === "Enter") {
     const chatInput = document.getElementById("chat-input");
     const message = chatInput.value.trim().toLowerCase();
-    chatInput.value = "";
+    chatInput.value = "";  // Clear the input field
     displayMessage("User", message);
 
-    // Chatbot responses
+    // Chatbot response logic
     if (message === "hi") {
       displayMessage("Anil Coir Works", "Welcome to Anil Coir Works! You can contact us at anilcoirworks1973@gmail.com.");
     } else {
@@ -31,5 +32,5 @@ function displayMessage(sender, message) {
   const newMessage = document.createElement("div");
   newMessage.innerHTML = `<strong>${sender}:</strong> ${message}`;
   chatMessages.appendChild(newMessage);
-  chatMessages.scrollTop = chatMessages.scrollHeight;
+  chatMessages.scrollTop = chatMessages.scrollHeight;  // Auto-scroll to the latest message
 }
