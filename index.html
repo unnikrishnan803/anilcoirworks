@@ -8,11 +8,12 @@
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Header Section with floating cart -->
   <header>
     <div class="top-bar">
       <span>Email: anilcoirworks1973@gmail.com</span>
       <span>Phone: +91 6235279256</span>
+      <a href="#cart" class="cart-icon">🛒</a>
     </div>
     <nav>
       <h1 class="brand-title">ANIL COIR WORKS</h1>
@@ -24,7 +25,7 @@
     </nav>
   </header>
 
-  <!-- Banner Section -->
+  <!-- Banner Section with Background Image -->
   <section class="banner">
     <h2>Welcome to Anil Coir Works</h2>
     <p>Providing high-quality coir products since 1973.</p>
@@ -35,41 +36,24 @@
   <section id="products" class="product-grid">
     <h3>Our Products</h3>
     <div class="products">
-      <!-- Product Cards -->
-      <div class="product-card" onclick="redirectToWhatsApp('Spool', 85)">
+      <div class="product-card" onclick="addToCart('Spool', 85)">
         <img src="i7.jpg" alt="Spool">
         <h4>Spool</h4>
         <p>Price: ₹85</p>
         <button>Add to Cart</button>
       </div>
-      <div class="product-card" onclick="redirectToWhatsApp('Coir Mat', 450)">
-        <img src="i3.jpg" alt="Coir Mat">
-        <h4>Coir Mat</h4>
-        <p>Price: ₹450</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card" onclick="redirectToWhatsApp('Big Coir Mat', 5050)">
-        <img src="i5.jpg" alt="Big Coir Mat">
-        <h4>Big Coir Mat</h4>
-        <p>Price: ₹5050</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card" onclick="redirectToWhatsApp('Coir Rope', 150)">
-        <img src="i6.jpg" alt="Coir Rope">
-        <h4>Coir Rope</h4>
-        <p>Price: ₹150</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card" onclick="redirectToWhatsApp('Door Mat', 300)">
-        <img src="i4.jpg" alt="Door Mat">
-        <h4>Door Mat</h4>
-        <p>Price: ₹300</p>
-        <button>Add to Cart</button>
-      </div>
-      <!-- Add more products as needed -->
+      <!-- Add other product cards similarly -->
     </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart">
+    <h3>Shopping Cart</h3>
+    <ul id="cart-items"></ul>
+    <button id="checkout-button">Proceed to Checkout</button>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+
