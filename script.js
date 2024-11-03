@@ -1,36 +1,49 @@
-// Initialize an array to simulate adding products to the cart
-const cart = [];
+let cart = [];
 
-function addToCart(productName, price) {
-  cart.push({ productName, price });
-  updateCart();
+function addToCart(name, price) {
+  const item = { name, price };
+  cart.push(item);
+  alert(`${name} added to cart.`);
+  displayCartItems();
 }
 
-function updateCart() {
-  console.log("Cart updated:", cart);
+function toggleCart() {
+  const cartSection = document.getElementById('cart');
+  const deliverySection = document.getElementById('delivery');
+  cartSection.classList.toggle('hidden');
+  deliverySection.classList.add('hidden');
 }
 
-// Chatbot handling function
-function handleChat(event) {
-  if (event.key === "Enter") {
-    const chatInput = document.getElementById("chat-input");
-    const message = chatInput.value.trim().toLowerCase();
-    chatInput.value = "";  // Clear the input field
-    displayMessage("User", message);
-
-    // Chatbot response logic
-    if (message === "hi") {
-      displayMessage("Anil Coir Works", "Welcome to Anil Coir Works! You can contact us at anilcoirworks1973@gmail.com.");
-    } else {
-      displayMessage("Anil Coir Works", "I'm here to assist you! Type 'hi' to get started.");
-    }
-  }
+function displayCartItems() {
+  const cartItemsList = document.getElementById('cart-items');
+  cartItemsList.innerHTML = ''; // Clear previous items
+  cart.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - ₹${item.price}`;
+    cartItemsList.appendChild(li);
+  });
 }
 
-function displayMessage(sender, message) {
-  const chatMessages = document.getElementById("chat-messages");
-  const newMessage = document.createElement("div");
-  newMessage.innerHTML = `<strong>${sender}:</strong> ${message}`;
-  chatMessages.appendChild(newMessage);
-  chatMessages.scrollTop = chatMessages.scrollHeight;  // Auto-scroll to the latest message
+function toggleDelivery() {
+  const cartSection = document.getElementById('cart');
+  const deliverySection = document.getElementById('delivery');
+  cartSection.classList.add('hidden');
+  deliverySection.classList.remove('hidden');
 }
+
+document.getElementById('delivery-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  const name = document.getElementById('name').value;
+  const address = document.getElementById('address').value;
+  const pincode = document.getElementById('pincode').value;
+  const paymentMethod = document.getElementById('payment').value;
+
+  const cartSummary = cart.map(item => `${item.name} - ₹${item.price}`).join(', ');
+  const message = `Order Details:\nName: ${name}\nAddress: ${address}\nPin Code: ${pincode}\nPayment Method: ${paymentMethod}\nCart: ${cartSummary}`;
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappLink = `https://wa.link/0imfam?text=${encodedMessage}`;
+
+  window.open(whatsappLink, '_blank'); // Open WhatsApp in a new tab
+  cart = []; // Reset the cart
+  displayCartItems(); // Update cart display
+});
