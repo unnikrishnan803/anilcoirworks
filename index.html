@@ -10,6 +10,127 @@
 <body>
   <header>
     <h1 class="logo">𝓐𝓝𝓘𝓛 𝓒𝓞𝓘𝓡 𝓦𝓞𝓡𝓚𝓢</h1>
+    <button class="catalog-btn" onclick="toggleCart()">Go <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIL COIR WORKS/title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">𝓐𝓝𝓘𝓛 𝓒𝓞𝓘𝓡 𝓦𝓞𝓡𝓚𝓢</h1>
+    <button class="catalog-btn" onclick="toggleCart()">Go to Cart</button>
+  </header>
+
+  <section id="cart" class="hidden">
+    <h3>Cart Items</h3>
+    <ul id="cart-items"></ul>
+    <button onclick="toggleDelivery()">Proceed to Delivery</button>
+  </section>
+
+  <section id="delivery" class="hidden">
+    <h3>Delivery Details</h3>
+    <form id="delivery-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="text" id="pincode" placeholder="Pin Code" required>
+      <select id="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Cash on Delivery">Cash on Delivery</option>
+      </select>
+      <button type="submit">Send Order</button>
+    </form>
+  </section>
+  <section id="products" class="product-grid">
+    <h3>Our Products</h3>
+    <div class="products">
+      <!-- Product Cards -->
+      <div class="product-card">
+        <img src="i7.jpg" alt="Spool">
+        <h4>Spool</h4>
+        <p>Price: ₹85</p>
+        <button onclick="addToCart('Spool', 85)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i3.jpg" alt="Coir Mat">
+        <h4>Coir Mat</h4>
+        <p>Price: ₹450</p>
+        <button onclick="addToCart('Coir Mat', 450)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i5.jpg" alt="Big Coir Mat">
+        <h4>Big Coir Mat</h4>
+        <p>Price: ₹5050</p>
+        <button onclick="addToCart('Big Coir Mat', 5050)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i6.jpg" alt="Coir Rope">
+        <h4>Coir Rope</h4>
+        <p>Price: ₹150</p>
+        <button onclick="addToCart('Coir Rope', 150)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i4.jpg" alt="Door Mat">
+        <h4>Door Mat</h4>
+        <p>Price: ₹300</p>
+        <button onclick="addToCart('Door Mat', 300)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images.jpg" alt="Coir Brush">
+        <h4>Coir Brush</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir Brush', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://sslimages.shoppersstop.com/sys-master/images/hef/h5a/31586088845342/A23BED120007_TAUPE_alt4.jpg_2000Wx3000H" alt="Coir Wall Hanging">
+        <h4>Coir Wall Hanging</h4>
+        <p>Price: ₹250</p>
+        <button onclick="addToCart('Coir Wall Hanging', 250)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/337598089/WD/EZ/SN/3579804/rubberized-coir-cushion-sheets-500x500.jpg" alt="Coir Cushion">
+        <h4>Coir Cushion</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir Cushion', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://onlymat.com/cdn/shop/files/TP12510_3.jpg?v=1708078687&width=1445" alt="CoirMAT">
+        <h4>CoirMAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('CoirMAT', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://img3.exportersindia.com/product_images/bc-full/2023/9/11461248/coconut-coir-fiber-1677746154-6786063.jpeg" alt="Coconut Coir Fibre">
+        <h4>COCONUT COIR FIBRE</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coconut Coir Fibre', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.shutterstock.com/image-photo/brown-doormat-carpet-textured-isolated-600nw-1875232576.jpg" alt="Coir MAT">
+        <h4>Coir MAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.makeanentrance.com/media/catalog/category/coir-matting-cut-to-size.jpg" alt="Coir MAT">
+        <h4>Coir MAT</h4>
+        <p>Price: ₹4<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIL COIR WORKS/title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">𝓐𝓝𝓘𝓛 𝓒𝓞𝓘𝓡 𝓦𝓞𝓡𝓚𝓢</h1>
     <button class="catalog-btn" onclick="toggleCart()">Go to Cart</button>
   </header>
 
@@ -108,6 +229,245 @@
         <img src="https://www.makeanentrance.com/media/catalog/category/coir-matting-cut-to-size.jpg" alt="Coir MAT">
         <h4>Coir MAT</h4>
         <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ANIL COIR WORKS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+00</p>
+        <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ANIL COIR WORKS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+to Cart</button>
+  </header>
+
+  <section id="cart" class="hidden">
+    <h3>Cart Items</h3>
+    <ul id="cart-items"></ul>
+    <button onclick="toggleDelivery()">Proceed to Delivery</button>
+  </section>
+
+  <section id="delivery" class="hidden">
+    <h3>Delivery Details</h3>
+    <form id="delivery-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="text" id="pincode" placeholder="Pin Code" required>
+      <select id="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Cash on Delivery">Cash on Delivery</option>
+      </select>
+      <button type="submit">Send Order</button>
+    </form>
+  </section>
+  <section id="products" class="product-grid">
+    <h3>Our Products</h3>
+    <div class="products">
+      <!-- Product Cards -->
+      <div class="product-card">
+        <img src="i7.jpg" alt="Spool">
+        <h4>Spool</h4>
+        <p>Price: ₹85</p>
+        <button onclick="addToCart('Spool', 85)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i3.jpg" alt="Coir Mat">
+        <h4>Coir Mat</h4>
+        <p>Price: ₹450</p>
+        <button onclick="addToCart('Coir Mat', 450)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i5.jpg" alt="Big Coir Mat">
+        <h4>Big Coir Mat</h4>
+        <p>Price: ₹5050</p>
+        <button onclick="addToCart('Big Coir Mat', 5050)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i6.jpg" alt="Coir Rope">
+        <h4>Coir Rope</h4>
+        <p>Price: ₹150</p>
+        <button onclick="addToCart('Coir Rope', 150)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i4.jpg" alt="Door Mat">
+        <h4>Door Mat</h4>
+        <p>Price: ₹300</p>
+        <button onclick="addToCart('Door Mat', 300)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images.jpg" alt="Coir Brush">
+        <h4>Coir Brush</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir Brush', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://sslimages.shoppersstop.com/sys-master/images/hef/h5a/31586088845342/A23BED120007_TAUPE_alt4.jpg_2000Wx3000H" alt="Coir Wall Hanging">
+        <h4>Coir Wall Hanging</h4>
+        <p>Price: ₹250</p>
+        <button onclick="addToCart('Coir Wall Hanging', 250)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/337598089/WD/EZ/SN/3579804/rubberized-coir-cushion-sheets-500x500.jpg" alt="Coir Cushion">
+        <h4>Coir Cushion</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir Cushion', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://onlymat.com/cdn/shop/files/TP12510_3.jpg?v=1708078687&width=1445" alt="CoirMAT">
+        <h4>CoirMAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('CoirMAT', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://img3.exportersindia.com/product_images/bc-full/2023/9/11461248/coconut-coir-fiber-1677746154-6786063.jpeg" alt="Coconut Coir Fibre">
+        <h4>COCONUT COIR FIBRE</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coconut Coir Fibre', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.shutterstock.com/image-photo/brown-doormat-carpet-textured-isolated-600nw-1875232576.jpg" alt="Coir MAT">
+        <h4>Coir MAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.makeanentrance.com/media/catalog/category/coir-matting-cut-to-size.jpg" alt="Coir MAT">
+        <h4>Coir MAT</h4>
+        <p>Price: ₹4<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANIL COIR WORKS/title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">𝓐𝓝𝓘𝓛 𝓒𝓞𝓘𝓡 𝓦𝓞𝓡𝓚𝓢</h1>
+    <button class="catalog-btn" onclick="toggleCart()">Go to Cart</button>
+  </header>
+
+  <section id="cart" class="hidden">
+    <h3>Cart Items</h3>
+    <ul id="cart-items"></ul>
+    <button onclick="toggleDelivery()">Proceed to Delivery</button>
+  </section>
+
+  <section id="delivery" class="hidden">
+    <h3>Delivery Details</h3>
+    <form id="delivery-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="text" id="pincode" placeholder="Pin Code" required>
+      <select id="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Cash on Delivery">Cash on Delivery</option>
+      </select>
+      <button type="submit">Send Order</button>
+    </form>
+  </section>
+  <section id="products" class="product-grid">
+    <h3>Our Products</h3>
+    <div class="products">
+      <!-- Product Cards -->
+      <div class="product-card">
+        <img src="i7.jpg" alt="Spool">
+        <h4>Spool</h4>
+        <p>Price: ₹85</p>
+        <button onclick="addToCart('Spool', 85)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i3.jpg" alt="Coir Mat">
+        <h4>Coir Mat</h4>
+        <p>Price: ₹450</p>
+        <button onclick="addToCart('Coir Mat', 450)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i5.jpg" alt="Big Coir Mat">
+        <h4>Big Coir Mat</h4>
+        <p>Price: ₹5050</p>
+        <button onclick="addToCart('Big Coir Mat', 5050)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i6.jpg" alt="Coir Rope">
+        <h4>Coir Rope</h4>
+        <p>Price: ₹150</p>
+        <button onclick="addToCart('Coir Rope', 150)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="i4.jpg" alt="Door Mat">
+        <h4>Door Mat</h4>
+        <p>Price: ₹300</p>
+        <button onclick="addToCart('Door Mat', 300)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images.jpg" alt="Coir Brush">
+        <h4>Coir Brush</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir Brush', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://sslimages.shoppersstop.com/sys-master/images/hef/h5a/31586088845342/A23BED120007_TAUPE_alt4.jpg_2000Wx3000H" alt="Coir Wall Hanging">
+        <h4>Coir Wall Hanging</h4>
+        <p>Price: ₹250</p>
+        <button onclick="addToCart('Coir Wall Hanging', 250)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/337598089/WD/EZ/SN/3579804/rubberized-coir-cushion-sheets-500x500.jpg" alt="Coir Cushion">
+        <h4>Coir Cushion</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir Cushion', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://onlymat.com/cdn/shop/files/TP12510_3.jpg?v=1708078687&width=1445" alt="CoirMAT">
+        <h4>CoirMAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('CoirMAT', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://img3.exportersindia.com/product_images/bc-full/2023/9/11461248/coconut-coir-fiber-1677746154-6786063.jpeg" alt="Coconut Coir Fibre">
+        <h4>COCONUT COIR FIBRE</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coconut Coir Fibre', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.shutterstock.com/image-photo/brown-doormat-carpet-textured-isolated-600nw-1875232576.jpg" alt="Coir MAT">
+        <h4>Coir MAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://www.makeanentrance.com/media/catalog/category/coir-matting-cut-to-size.jpg" alt="Coir MAT">
+        <h4>Coir MAT</h4>
+        <p>Price: ₹400</p>
+        <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ANIL COIR WORKS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+00</p>
         <button onclick="addToCart('Coir MAT', 400)">Add to Cart</button>
       </div>
     </div>
