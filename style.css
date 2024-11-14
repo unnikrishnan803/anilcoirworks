@@ -6,16 +6,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f1f5f9;
-  color: #333;
+  background-color: #1a1a1a; /* Dark background for a sleek look */
+  color: #e6e6e6; /* Light text for better readability on dark background */
 }
 
 header {
-  background-color: #2874f0;
+  background-color: #1e5cbf; /* Dark blue header for contrast */
   color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .product-grid {
@@ -26,7 +26,7 @@ header {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
-  color: #2874f0;
+  color: #1e90ff; /* Lighter blue for headings */
 }
 
 .products {
@@ -36,17 +36,18 @@ header {
 }
 
 .product-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #333; /* Darker background for cards */
+  border: 1px solid #555; /* Softer border for subtle separation */
   border-radius: 8px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly more shadow on hover */
 }
 
 .product-card img {
@@ -59,25 +60,27 @@ header {
 .product-card h4 {
   font-size: 18px;
   margin: 10px 0;
+  color: #e6e6e6;
 }
 
 .product-card p {
   font-size: 16px;
-  color: #555;
+  color: #a6a6a6; /* Slightly lighter color for descriptions */
 }
 
 .product-card button {
-  background-color: #2874f0;
+  background-color: #1e90ff; /* Bright blue button */
   color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .product-card button:hover {
-  background-color: #1e5cbf;
+  background-color: #1c7fd1; /* Slightly darker blue on hover */
+  transform: scale(1.05);
 }
 
 #cart, #delivery {
@@ -91,6 +94,7 @@ header {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #2874f0;
+  background-color: #1e5cbf;
   color: white;
 }
+
